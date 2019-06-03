@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3b074a4195.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="name">
+                Crystal Collector!
+            </div>
+            <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
+                data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                Instructions
+            </button>
+        </div>
+    </div>
+    <hr>
+    <div class="scores">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">Score: <span id="totalScore">0</span>/<span id="targetScore">0</span>
+                </div>
+                <div class="col-md-4">Wins: <div id="winsNumber">0</div>
+                </div>
+                <div class="col-md-4">Losses: <div id="lossesNumber">0</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="crystals">
+        <div class="container">
+            <h3 class="crystal" id="crystalOne">
+                <i class="fas fa-gem one">
+                </i>
+            </h3>
+            <h3 class="crystal" id="crystalTwo">
+                <i class="fas fa-gem two">
+                </i>
+            </h3>
+            <h3 class="crystal" id="crystalThree">
+                <i class="fas fa-gem three">
+                </i>
+            </h3>
+            <h3 class="crystal" id="crystalFour">
+                <i class="fas fa-gem four">
+                </i>
+            </h3>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>
+
+
+
+<!--
+    crystals collector box
+    instructions box
+    the score you need to get box
+    the number of wins and losses you have box
+    the four crystals box
+    your total score box
+-->

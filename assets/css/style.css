@@ -1,0 +1,63 @@
+.header {
+    height: 100px;
+    background-color:#e8a87c;
+    width: 100%;
+    margin-top: 10px;
+}
+.container {
+    max-width: 960px;
+
+}
+.name {
+    font-size: 60px;
+    color: #e27d60;
+    float: left;
+}
+.btn {
+    float: right;
+    color: #e27d60;
+    font-size:60px;
+    text-align: center;
+    vertical-align: middle;
+}
+.btn-secondary {
+    float: right;
+    color: lightgray;
+    font-size:60px;
+    text-align: center;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+.scores {
+    background-color:#e6c4ad;
+    margin: auto;
+    margin-top: 10px; 
+    max-width: 960px; 
+}
+.row {
+    font-size: 30px;
+    color:#e27d60;
+    vertical-align: middle;
+}
+.crystals {
+    background-color:#e6c4ad;
+    margin: auto;
+    margin-top: 5px; 
+    max-width: 960px; 
+}
+.one {
+    color:blue;
+}
+.two {
+    color:red;
+}
+.three {
+    color:green;
+}
+.four {
+    color:yellow;
+}
+.crystal {
+    display:inline;
+    font-size: 80px;
+}
