@@ -3,10 +3,6 @@ $(document).ready(function () {
     var targetScore = $("#targetScore");
     var winsNumber = $("#winsNumber");
     var lossesNumber = $("#lossesNumber");
-    // var crystalOne = $("crystal-one");
-    // var crystalTwo = $("crystal-two");
-    // var crystalThree = $("crystal-three");
-    // var crystalFour = $("crystal-four");
     var totalScoreN = 0;
     var lossesNumberN = 0;
     var winsNumberN = 0;
@@ -25,12 +21,25 @@ $(document).ready(function () {
             winsNumber.text(winsNumberN);
             totalScoreN=0;
             totalScore.text(totalScoreN);
+            targetScoreN = Math.floor(Math.random() * 102) + 19;
+            targetScore.text(targetScoreN);
+            counterCrystalOne = Math.floor(Math.random() * 12) + 1;
+            counterCrystalTwo = Math.floor(Math.random() * 12) + 1;
+            counterCrystalThree = Math.floor(Math.random() * 12) + 1;
+            counterCrystalFour = Math.floor(Math.random() * 12) + 1;
+
         }
         else if (totalScoreN > targetScoreN) {
             lossesNumberN++;
             lossesNumber.text(lossesNumberN);
             totalScoreN=0;
             totalScore.text(totalScoreN);
+            targetScoreN = Math.floor(Math.random() * 102) + 19;
+            targetScore.text(targetScoreN);
+            counterCrystalOne = Math.floor(Math.random() * 12) + 1;
+            counterCrystalTwo = Math.floor(Math.random() * 12) + 1;
+            counterCrystalThree = Math.floor(Math.random() * 12) + 1;
+            counterCrystalFour = Math.floor(Math.random() * 12) + 1;
         }
         else {
             totalScore.text(totalScoreN);

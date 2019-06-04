@@ -19,11 +19,17 @@
             <div class="name">
                 Crystal Collector!
             </div>
-            <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
-                data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+            <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" 
+            data-content=
+            "You will be given a random number at the start of the game.
+            There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+            You win the game if your total score equals the random number.
+            You lose the game if your total score exceeds the random number.
+            The value of each crystal is hidden from you until you click on it.
+            Each time the game starts, the random number and each crystal's value will be reset. ">
                 Instructions
-            </button>
-        </div>
+            </button>  
+            </div>
     </div>
     <hr>
     <div class="scores">
@@ -31,15 +37,15 @@
             <div class="row">
                 <div class="col-md-4">Score: <span id="totalScore">0</span>/<span id="targetScore">0</span>
                 </div>
-                <div class="col-md-4">Wins: <div id="winsNumber">0</div>
+                <div class="col-md-4">Wins: <span id="winsNumber">0</span>
                 </div>
-                <div class="col-md-4">Losses: <div id="lossesNumber">0</div>
+                <div class="col-md-4">Losses: <span id="lossesNumber">0</span>
                 </div>
             </div>
         </div>
     </div>
     <div class="crystals">
-        <div class="container">
+        <div class="container center">
             <h3 class="crystal" id="crystalOne">
                 <i class="fas fa-gem one">
                 </i>
@@ -58,8 +64,16 @@
             </h3>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="assets/javascript/game.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
+
 </body>
 
 </html>
@@ -67,10 +81,10 @@
 
 
 <!--
-    crystals collector box
-    instructions box
-    the score you need to get box
-    the number of wins and losses you have box
-    the four crystals box
-    your total score box
+    You will be given a random number at the start of the game.
+    There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+    You win the game if your total score equals the random number.
+    You lose the game if your total score exceeds the random number.
+    The value of each crystal is hidden from you until you click on it.
+    Each time the game starts, the random number and each crystal's value will be reset. 
 -->
