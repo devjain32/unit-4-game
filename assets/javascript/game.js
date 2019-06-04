@@ -55,6 +55,6 @@ $(document).ready(function () {
         crystalFunction(counterCrystalThree);
     });
     $("#crystalFour").on("click", function () {
-        crystalFunction(counterCrystalThree);
+        crystalFunction(counterCrystalFour);
     });
 })
