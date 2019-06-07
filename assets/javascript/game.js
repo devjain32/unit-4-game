@@ -13,6 +13,11 @@ $(document).ready(function () {
     var counterCrystalFour = Math.floor(Math.random() * 12) + 1;
 
     targetScore.text(targetScoreN);
+    
+    // function myFunction() {
+    //  console.log();
+    // }
+    // myFunction("this is my string");
 
     function crystalFunction(crystalCounter){
         totalScoreN = crystalCounter + totalScoreN;
